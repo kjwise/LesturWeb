@@ -12,6 +12,13 @@
         font-family: serif;
         color: green;
     }
+	#nextWord{
+	    position: fixed;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		z-index: +99;
+	}
 </style>
 <script>
 
@@ -65,10 +72,8 @@
 </script>
 
 <body>
-
-<div style="text-align: center;">
-<span id="word">Orð</span>
-<br/>
-<input id="nextWord" type="button" value="Næsta orð" accesskey="n" />
-</div>
+	<div id="nextWord" onclick="randomWord()"></div>
+	<div style="text-align: center;">
+	<span id="word"></span>
+	</div>
 </body>
