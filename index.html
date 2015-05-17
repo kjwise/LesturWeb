@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:https="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Lærðu að lesa!</title>
+</head>
+<style>
+    #word {
+        display: block;
+        font-size: 10em;
+        font-family: serif;
+        color: green;
+    }
+</style>
+<script>
+
+    var words = Array(
+            'Mamma',
+            'Pabbi',
+            'Gunnar',
+            'Ég',
+            'Þú',
+            'Hann',
+            'Hún',
+            'Leika',
+            'Leikskóli',
+            'Amma',
+            'Afi',
+            'Og',
+            'Eða',
+            'Vera',
+            'Að',
+            'Í',
+            'Á',
+            'Það',
+            'Sem',
+            'Hafa',
+            'Barn',
+            'Bróðir',
+            'Systir',
+            'Skór',
+            'Sokkar',
+            'Hundur',
+            'Köttur',
+            'Bangsi',
+            'Bíll',
+            'Ýta'
+    );
+
+    function randomWord() {
+        var word = words[Math.floor(Math.random()*words.length)];
+
+        // jQuery methods go here...
+        $("#word").text(word);
+    }
+
+    $(function(){
+
+        randomWord();
+        $("#nextWord").bind("click", randomWord);
+
+    });
+
+</script>
+
+<body>
+
+<div style="text-align: center;">
+<span id="word">Orð</span>
+<br/>
+<input id="nextWord" type="button" value="Næsta orð" accesskey="n" />
+</div>
+</body>
