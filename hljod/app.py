@@ -33,9 +33,6 @@ if __name__ == '__main__':
                 'log.screen': True
             },
             '/': {
-                'tools.sessions.on': True,
-                'tools.sessions.persistent': True,
-                'tools.auth.on': True,
                 'tools.staticdir.root': os.path.abspath(os.getcwd()),
                 'tools.sessions.on': True,
                 'tools.sessions.timeout': 60
