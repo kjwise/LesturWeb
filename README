@@ -1,0 +1,6 @@
+== Setup
+* Download mp3 files here: http://www.malfong.is/index.php?dlid=53&lang=is
+* Run python init_db.py in /hljod/data
+* Activate virtualenv (depends on setup)
+* Install requirements.txt
+* run python app.py in /hljod
