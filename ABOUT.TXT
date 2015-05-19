@@ -1,0 +1,9 @@
+About the ISLEX recordings
+The pronounciation of each entry in the ISLEX-dictionary is given in a sound file. They consist of nearly 49,000 words in Icelandic.
+
+Recordings took place in September 2012 in the studio Upptekið in Reykjavík . Reader is Guðfinna Rúnarsdóttir (born 1963). 
+
+The high quality soundfiles are in wav-format. (1058 Kbps, 44.1 KHz, 24 bits, 1 channel, PCM)
+The soundfiles are also available in compressed formats, MP3 and OGG Vorbis.
+MP3: 64 Kbps, 44.1 KHz, 1 channel, MPEG Audio (Version 1) (Layer 3)
+OGG: 80 Kbps, 44.1 KHz, 1 channel Vorbis

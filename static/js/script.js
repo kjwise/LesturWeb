@@ -20,5 +20,12 @@ $(function(){
     randomWord();
     $("#next_word").on("click", randomWord);
     $("#play_audio").on("click", play_audio);
-
+    $("#capitalize").on("click", function(){
+        $("#word").addClass("capitalize");
+        $("#word").removeClass("lowercase");
+    });
+    $("#lowercase").on("click", function(){
+        $("#word").addClass("lowercase");
+        $("#word").removeClass("capitalize");
+    });
 });
