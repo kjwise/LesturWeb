@@ -1,0 +1,16 @@
+.container
+{
+    top: 50px;
+}
+
+#word {
+    display: block;
+    font-size: 6em;
+    font-family: serif;
+    color: green;
+}
+
+.capitalize
+{
+    text-transform: uppercase;
+}
