@@ -1,3 +1,8 @@
+.container
+{
+    top: 50px;
+}
+
     #word {
         display: block;
         font-size: 10em;

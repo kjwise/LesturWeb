@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import cherrypy, sqlite3, os
+import cherrypy, sqlite3, os, random, json
 from jinja2 import Environment, FileSystemLoader
 env = Environment(loader=FileSystemLoader('templates'))
 
@@ -16,12 +16,20 @@ class Controller(object):
     @cherrypy.expose
     @cherrypy.tools.allow(methods=['GET'])
     @cherrypy.tools.encode()
+    @cherrypy.tools.json_out()
     def get_word(self):
         conn = sqlite3.connect('data/file_names.sqlite')
         c = conn.cursor()
         c.execute('''select * from file_names''')
         data = c.fetchall()
-        print 'number of rows', len(data)
+        pick = random.choice(data)
+
+        return {
+            'file_name': pick[0],
+            'word': pick[1]
+        }
+
+
 
 if __name__ == '__main__':
     config = {
