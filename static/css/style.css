@@ -1,16 +1,88 @@
+html
+{
+	font-family: verdana;
+}
+
+header
+{
+	height: 40px;
+	background-color: black;
+}
+
 .container
 {
     top: 50px;
 }
 
+#cap_control
+{
+	font-size: 3em;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+}
+
+#size_control
+{
+	font-size: 3em;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+.play_control
+{
+	font-size: 3em;
+}
+
+#word_length:hover
+{
+	cursor: pointer;
+}
+
 #word {
     display: block;
     font-size: 6em;
-    font-family: serif;
-    color: green;
+    color: black;
+}
+
+.jumbotron
+{
+	background-color: white;
+	text-align: center;
 }
 
 .capitalize
 {
     text-transform: uppercase;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.right
+{
+	text-align: right;
+}
+
+.header
+{
+	font-size: 2em;
+}
+
+.color-white
+{
+	color: white;
+}
+
+.glyphicon
+{
+	margin: 10px;
+}
+
+.glyphicon:hover
+{
+	color: green;
 }

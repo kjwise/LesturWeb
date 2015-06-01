@@ -9,27 +9,39 @@
 
 
 <body>
-    <header><a href="http://www.malfong.is/index.php?dlid=53&lang=is">©</a> - <a href="ABOUT.TXT">um vefinn</a></header>
+    <header>
+        <div class="container">
+        <div class="col-md-4 color-white"></div>
+        <div class="col-md-4 center header color-white">
+            Lestu rétt
+        </div>
+        <div class="col-md-4 right color-white">
+            <a href="http://www.malfong.is/index.php?dlid=53&lang=is">©</a> - <a href="ABOUT.TXT">um vefinn</a>
+        </div>
+    </header>
     <audio id="audio" src="" preload="none">
         <p>Því miður kann þessi vafri ekki á hljóðspilun, vinsamlega íhugaðu að nota <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> eða <a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a></p>
     </audio>
 
-    <div class="container">
-        <div class="row">
-            <div style="text-align: center;" class="col-md-2">
-                <a id="capitalize">A</a>
-                <a id="lowercase">a</a>
-            </div>
-            <div style="text-align: center;" class="col-md-8">
-                <span id="word"></span>
-            </div>
-        </div>
-        <div class="row">
-            <div style="text-align: center;" class="col-md-2"><img id="play_audio" src="static/img/audio.png"/></div>
-            <div class="col-md-8"></div>
-            <div style="text-align: center;" class="col-md-2"><img id="next_word" src="static/img/next.png"/></div>
-        </div>
+    <div class="jumbotron">
+        <span id="word"></span>
+        <span id="play_audio" class="glyphicon glyphicon-play-circle hover play_control"></span>
+        <span id="next_word" class="glyphicon glyphicon-refresh hover play_control"></span>
     </div>
+
+    <div id="cap_control">
+        <a id="capitalize">A</a>
+        <a id="lowercase">a</a>                
+    </div>
+
+    <div id="size_control">
+        <span class="word_length glyphicon glyphicon-minus" data="-1"></span>
+        <span id="word_length">6</span>
+        <span class="word_length glyphicon glyphicon-plus" data="1"></span>
+    </div>
+
+    <footer>        
+    </footer>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="static/js/script.js"></script>
 </body>
